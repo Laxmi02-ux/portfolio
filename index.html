@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laxmi Sharma — Business & Data Analytics Specialist</title>
+<meta name="description" content="Portfolio of Laxmi Sharma, a Business & Data Analytics Specialist bridging finance, KPIs and operations with Python, SQL, ML and BI dashboards." />
+
+<!-- Fonts: Source Serif 4 (headlines), IBM Plex Sans (body), IBM Plex Mono (data/figures) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Tailwind (utility layout only — visual identity lives in styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#EEF0E7',
+          paper2: '#E4E7DC',
+          ink: '#1B2420',
+          inksoft: '#4A554C',
+          teal: { deep: '#1F4B43', DEFAULT: '#2F6F62' },
+          gold: '#B8862B',
+          rule: '#C7CBB9'
+        },
+        fontFamily: {
+          serif: ['"Source Serif 4"', 'serif'],
+          sans: ['"IBM Plex Sans"', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace']
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased">
+
+<!-- ============ NAV ============ -->
+<header id="site-header" class="ledger-header fixed top-0 inset-x-0 z-50">
+  <div class="max-w-[1100px] mx-auto px-6 md:px-8 flex items-center justify-between h-16">
+    <a href="#top" class="font-serif text-lg font-semibold tracking-tight text-teal-deep">
+      Laxmi Sharma
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 font-mono text-[13px] text-inksoft">
+      <a href="#profile" class="nav-link" data-nav>Profile</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="#certifications" class="nav-link" data-nav>Certifications</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+
+    <button id="menu-toggle" aria-label="Open menu" aria-expanded="false" class="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8">
+      <span class="block h-[1.5px] w-6 bg-ink transition-transform"></span>
+      <span class="block h-[1.5px] w-6 bg-ink transition-opacity"></span>
+      <span class="block h-[1.5px] w-6 bg-ink transition-transform"></span>
+    </button>
+  </div>
+
+  <nav id="mobile-menu" class="md:hidden hidden flex-col border-t border-rule bg-paper font-mono text-sm">
+    <a href="#profile" class="mobile-link" data-nav>Profile</a>
+    <a href="#skills" class="mobile-link" data-nav>Skills</a>
+    <a href="#projects" class="mobile-link" data-nav>Projects</a>
+    <a href="#certifications" class="mobile-link" data-nav>Certifications</a>
+    <a href="#contact" class="mobile-link" data-nav>Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO / STATEMENT HEAD ============ -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 border-b border-rule">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="font-mono text-[13px] text-teal tracking-wide mb-6">Statement of Capability — FY2026</p>
+
+      <h1 class="font-serif text-[2.6rem] leading-[1.08] md:text-[4rem] md:leading-[1.05] font-semibold text-ink max-w-[16ch]">
+        A business analyst fluent in code, and an engineer fluent in the balance sheet.
+      </h1>
+
+      <p class="mt-6 max-w-[62ch] text-[17px] leading-relaxed text-inksoft">
+        I'm Laxmi Sharma, a Business &amp; Data Analytics Specialist. I move between finance, KPIs and operations on one side, and Python, SQL, machine learning and BI dashboards on the other — building tools that turn raw records into decisions.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#projects" class="btn-primary">View the projects</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Ledger summary line -->
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8 mt-16">
+      <dl class="ledger-summary grid grid-cols-2 md:grid-cols-4">
+        <div class="ledger-figure">
+          <dt>Applicant records analyzed</dt>
+          <dd>39,000<span class="text-gold">+</span></dd>
+        </div>
+        <div class="ledger-figure">
+          <dt>Churn model accuracy</dt>
+          <dd>~79<span class="text-gold">%</span></dd>
+        </div>
+        <div class="ledger-figure">
+          <dt>End-to-end BI projects</dt>
+          <dd>04</dd>
+        </div>
+        <div class="ledger-figure">
+          <dt>Professional certifications</dt>
+          <dd>05</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ PROFILE ============ -->
+  <section id="profile" class="section">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="eyebrow">01 — Profile</p>
+
+      <div class="grid md:grid-cols-[1.1fr_1fr] gap-12 md:gap-16 mt-6">
+        <div>
+          <h2 class="font-serif text-2xl md:text-[1.9rem] font-semibold text-teal-deep max-w-[20ch]">
+            Reading a P&amp;L and a pandas traceback with equal ease.
+          </h2>
+          <p class="mt-5 text-[16px] leading-relaxed text-inksoft max-w-[58ch]">
+            My academic foundation is an MBA in Data Analytics &amp; Visualization from LNCT University (2026), layered on a B.Com in Computer Applications from Barkatullah University (2024) — a deliberate pairing of business fundamentals and technical grounding.
+          </p>
+          <p class="mt-4 text-[16px] leading-relaxed text-inksoft max-w-[58ch]">
+            That foundation was tested in practice as a Technical Support Engineer Intern at Aligned Automation, where I worked on system-level troubleshooting, application diagnostics and operational execution. It's shaped how I build: analytics tools that hold up under real operational conditions, not just in a notebook.
+          </p>
+          <p class="mt-4 text-[16px] leading-relaxed text-inksoft max-w-[58ch]">
+            Today I position myself as a Business &amp; Data Analytics Specialist — someone who can sit in a strategy conversation about margins and KPIs, then go build the pipeline and dashboard that answers it.
+          </p>
+        </div>
+
+        <div class="ledger-table">
+          <div class="ledger-row ledger-row--head">
+            <span>Year</span><span>Milestone</span>
+          </div>
+          <div class="ledger-row">
+            <span class="font-mono text-gold">2024</span>
+            <span>B.Com, Computer Applications — Barkatullah University</span>
+          </div>
+          <div class="ledger-row">
+            <span class="font-mono text-gold">2024–25</span>
+            <span>Technical Support Engineer Intern — Aligned Automation</span>
+          </div>
+          <div class="ledger-row">
+            <span class="font-mono text-gold">2025</span>
+            <span>Churn &amp; credit-risk analytics projects shipped</span>
+          </div>
+          <div class="ledger-row">
+            <span class="font-mono text-gold">2026</span>
+            <span>MBA, Data Analytics &amp; Visualization — LNCT University</span>
+          </div>
+          <div class="ledger-row">
+            <span class="font-mono text-gold">2026</span>
+            <span>AI-powered financial &amp; sales analytics assistant, live on Render</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS MATRIX ============ -->
+  <section id="skills" class="section border-t border-rule">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="eyebrow">02 — Skills matrix</p>
+      <h2 class="font-serif text-2xl md:text-[1.9rem] font-semibold text-teal-deep mt-6 max-w-[26ch]">
+        Five ledgers, one balance sheet of capability.
+      </h2>
+
+      <div id="skills-grid" class="mt-10 grid gap-10 md:grid-cols-2">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section border-t border-rule">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="eyebrow">03 — Projects</p>
+      <h2 class="font-serif text-2xl md:text-[1.9rem] font-semibold text-teal-deep mt-6 max-w-[26ch]">
+        Four builds, four different problems worth solving.
+      </h2>
+
+      <div id="projects-list" class="mt-10">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section id="certifications" class="section border-t border-rule">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="eyebrow">04 — Certifications</p>
+      <h2 class="font-serif text-2xl md:text-[1.9rem] font-semibold text-teal-deep mt-6 max-w-[26ch]">
+        Formal credit, from the institutions that issued it.
+      </h2>
+
+      <div id="cert-list" class="ledger-table mt-10">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section border-t border-rule">
+    <div class="max-w-[1100px] mx-auto px-6 md:px-8">
+      <p class="eyebrow">05 — Contact</p>
+      <div class="grid md:grid-cols-[1.1fr_1fr] gap-12 items-start mt-6">
+        <div>
+          <h2 class="font-serif text-2xl md:text-[2rem] font-semibold text-teal-deep max-w-[18ch]">
+            Open to analyst, BI and data roles that need both sides of the brain.
+          </h2>
+          <p class="mt-5 text-[16px] leading-relaxed text-inksoft max-w-[52ch]">
+            If you're hiring for a role that needs someone equally comfortable in a boardroom KPI review and a SQL query, I'd like to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <a href="mailto:youremail@example.com" class="contact-line" id="email-link">
+            <span>Email</span>
+            <span class="font-mono">youremail@example.com</span>
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact-line">
+            <span>LinkedIn</span>
+            <span class="font-mono">/in/your-profile</span>
+          </a>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" class="contact-line">
+            <span>GitHub</span>
+            <span class="font-mono">/your-username</span>
+          </a>
+          <p class="mt-4 text-[13px] text-inksoft font-mono">Replace the placeholders above with your real contact links.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-rule py-8">
+  <div class="max-w-[1100px] mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between gap-2 font-mono text-[12px] text-inksoft">
+    <span>© <span id="year"></span> Laxmi Sharma. Built with intent, not a template.</span>
+    <span>Statement generated for portfolio purposes only.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
