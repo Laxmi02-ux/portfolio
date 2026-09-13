@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website. This site showcases my end-to-end data analytics projects, interactive dashboards, machine learning models, and full-stack business intelligence applications.
 
-🔗 **Live Portfolio:** [laxmi02-ux.github.io/laxmi-sharma-portfolio](https://laxmi02-ux.github.io/portfolio/) *(Replace with your actual GitHub Pages link)*
+🔗 **Live Portfolio:** [laxmi02-ux.github.io/laxmi-sharma-portfolio](https://laxmi02-ux.github.io/portfolio/) 
 
 ---
 
